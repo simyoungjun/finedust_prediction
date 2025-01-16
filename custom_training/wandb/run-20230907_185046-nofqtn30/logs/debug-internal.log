@@ -1,0 +1,663 @@
+2023-09-07 18:50:46,212 INFO    StreamThr :285072 [internal.py:wandb_internal():86] W&B internal server running at pid: 285072, started at: 2023-09-07 18:50:46.211665
+2023-09-07 18:50:46,214 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status
+2023-09-07 18:50:46,217 INFO    WriterThread:285072 [datastore.py:open_for_write():85] open: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\run-nofqtn30.wandb
+2023-09-07 18:50:46,218 DEBUG   SenderThread:285072 [sender.py:send():379] send: header
+2023-09-07 18:50:46,218 DEBUG   SenderThread:285072 [sender.py:send():379] send: run
+2023-09-07 18:50:46,823 INFO    SenderThread:285072 [dir_watcher.py:__init__():211] watching files in: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files
+2023-09-07 18:50:46,824 INFO    SenderThread:285072 [sender.py:_start_run_threads():1121] run started: nofqtn30 with start time 1694080246.212662
+2023-09-07 18:50:46,824 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: summary_record
+2023-09-07 18:50:46,824 INFO    SenderThread:285072 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-07 18:50:46,839 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: check_version
+2023-09-07 18:50:46,841 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: check_version
+2023-09-07 18:50:46,918 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: run_start
+2023-09-07 18:50:46,951 DEBUG   HandlerThread:285072 [system_info.py:__init__():31] System info init
+2023-09-07 18:50:46,951 DEBUG   HandlerThread:285072 [system_info.py:__init__():46] System info init done
+2023-09-07 18:50:46,951 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:50:46,951 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:50:46,951 INFO    HandlerThread:285072 [system_monitor.py:probe():201] Collecting system info
+2023-09-07 18:50:46,983 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:50:46,983 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:50:46,983 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:50:46,984 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started memory monitoring
+2023-09-07 18:50:47,001 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started network monitoring
+2023-09-07 18:50:47,016 DEBUG   HandlerThread:285072 [system_info.py:probe():195] Probing system
+2023-09-07 18:50:47,017 DEBUG   HandlerThread:285072 [gitlib.py:_init_repo():53] git repository is invalid
+2023-09-07 18:50:47,017 DEBUG   HandlerThread:285072 [system_info.py:probe():240] Probing system done
+2023-09-07 18:50:47,017 DEBUG   HandlerThread:285072 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.8.15', 'heartbeatAt': '2023-09-07T09:50:47.016328', 'startedAt': '2023-09-07T09:50:46.195716', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'c:\\Users\\sim\\Lab\\심영준_포항공대\\미세먼지\\custom\\train.py', 'codePath': 'train.py', 'host': 'DESKTOP-S2I4I68', 'username': 'sim', 'executable': 'c:\\Users\\sim\\anaconda3\\envs\\torch_test\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2100.0, 'min': 0.0, 'max': 2100.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 0.0, 'max': 2100.0}], 'disk': {'total': 930.8533592224121, 'used': 599.1537666320801}, 'gpu': 'NVIDIA GeForce RTX 3060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060', 'memory_total': 12884901888}], 'memory': {'total': 31.743865966796875}}
+2023-09-07 18:50:47,017 INFO    HandlerThread:285072 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-07 18:50:47,017 INFO    HandlerThread:285072 [system_monitor.py:probe():214] Publishing system info
+2023-09-07 18:50:47,017 DEBUG   HandlerThread:285072 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-09-07 18:50:47,018 DEBUG   HandlerThread:285072 [system_info.py:_save_pip():67] Saving pip packages done
+2023-09-07 18:50:47,018 DEBUG   HandlerThread:285072 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-09-07 18:50:47,020 ERROR   HandlerThread:285072 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] 지정된 파일을 찾을 수 없습니다
+Traceback (most recent call last):
+  File "c:\Users\sim\anaconda3\envs\torch_test\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "c:\Users\sim\anaconda3\envs\torch_test\lib\subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "c:\Users\sim\anaconda3\envs\torch_test\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\Users\sim\anaconda3\envs\torch_test\lib\subprocess.py", line 1311, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 지정된 파일을 찾을 수 없습니다
+2023-09-07 18:50:47,021 DEBUG   HandlerThread:285072 [system_info.py:_save_conda():86] Saving conda packages done
+2023-09-07 18:50:47,021 INFO    HandlerThread:285072 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-07 18:50:47,028 DEBUG   SenderThread:285072 [sender.py:send():379] send: files
+2023-09-07 18:50:47,028 INFO    SenderThread:285072 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-09-07 18:50:47,037 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:50:47,038 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:50:47,040 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:50:47,040 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:50:47,040 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:50:47,040 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:50:47,041 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:50:47,041 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:50:47,069 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:50:47,069 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:50:47,246 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:50:47,247 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined memory monitor
+2023-09-07 18:50:47,247 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined network monitor
+2023-09-07 18:50:47,402 DEBUG   SenderThread:285072 [sender.py:send():379] send: telemetry
+2023-09-07 18:50:47,402 DEBUG   SenderThread:285072 [sender.py:send():379] send: telemetry
+2023-09-07 18:50:47,403 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:50:47,838 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:50:47,838 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\wandb-metadata.json
+2023-09-07 18:50:47,839 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\requirements.txt
+2023-09-07 18:50:47,839 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\wandb-summary.json
+2023-09-07 18:50:47,839 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\conda-environment.yaml
+2023-09-07 18:50:47,900 INFO    wandb-upload_0:285072 [upload_job.py:push():131] Uploaded file C:\Users\sim\AppData\Local\Temp\tmpoih29r23wandb\rx6b6qnt-wandb-metadata.json
+2023-09-07 18:50:49,857 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:50:51,429 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:50:56,469 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:50:57,953 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:50:57,953 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:50:57,953 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:50:57,954 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:50:58,001 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:50:58,002 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:50:58,002 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:50:58,003 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started memory monitoring
+2023-09-07 18:50:58,024 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started network monitoring
+2023-09-07 18:50:58,431 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:50:58,431 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:50:58,431 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:50:58,431 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:50:58,431 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:50:58,460 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:50:58,460 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:50:58,461 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:50:58,645 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:50:58,646 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined memory monitor
+2023-09-07 18:50:58,646 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined network monitor
+2023-09-07 18:50:58,646 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:51:00,950 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:51:00,950 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\conda-environment.yaml
+2023-09-07 18:51:01,674 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:51:02,051 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:51:02,052 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:51:06,997 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:51:06,997 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:51:06,997 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:51:06,998 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:51:07,023 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:51:07,024 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:51:07,024 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:51:07,024 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:51:07,025 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:51:07,025 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:51:07,025 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:51:07,025 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:51:07,025 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:51:07,025 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:51:07,025 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:51:07,241 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:51:07,242 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:51:07,242 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:51:08,662 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:51:08,663 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:51:08,663 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:51:08,663 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:51:08,701 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:51:08,701 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:51:08,702 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:51:08,702 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started memory monitoring
+2023-09-07 18:51:08,723 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started network monitoring
+2023-09-07 18:51:09,051 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:51:09,294 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:51:09,294 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:51:09,294 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:51:09,295 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:51:09,327 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:51:09,327 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:51:09,328 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:51:09,328 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:51:09,520 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:51:09,521 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined memory monitor
+2023-09-07 18:51:09,521 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined network monitor
+2023-09-07 18:51:09,521 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:51:10,078 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:51:12,086 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\conda-environment.yaml
+2023-09-07 18:51:12,540 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:51:17,065 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:51:17,065 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:51:18,390 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:51:19,155 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\config.yaml
+2023-09-07 18:51:23,793 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:51:25,582 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:51:25,582 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:51:25,583 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:51:25,583 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:51:25,619 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:51:25,620 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:51:25,620 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:51:25,621 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started memory monitoring
+2023-09-07 18:51:25,631 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started network monitoring
+2023-09-07 18:51:25,662 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:51:25,662 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:51:25,662 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:51:25,662 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:51:25,689 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:51:25,689 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:51:25,689 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:51:25,690 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:51:25,845 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:51:25,845 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined memory monitor
+2023-09-07 18:51:25,845 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined network monitor
+2023-09-07 18:51:25,845 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:51:26,212 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:51:28,865 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:51:32,083 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:51:32,084 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:51:34,400 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:51:39,425 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:51:44,481 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:51:47,094 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:51:47,094 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:51:50,430 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:51:55,484 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:00,557 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:02,121 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:52:02,121 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:52:06,066 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:11,098 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:16,158 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:17,124 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:52:17,125 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:52:21,429 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:26,484 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:31,523 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:32,128 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:52:32,129 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:52:37,477 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:42,510 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:47,151 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:52:47,152 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:52:48,460 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:53,509 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:52:58,568 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:02,157 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:53:02,157 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:53:04,434 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:09,489 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:14,546 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:17,170 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:53:17,171 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:53:20,493 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:25,517 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:30,559 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:32,176 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:53:32,177 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:53:36,453 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:41,509 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:46,547 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:47,197 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:53:47,198 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:53:52,509 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:53:57,533 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:02,210 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:54:02,211 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:54:03,462 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:08,524 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:13,597 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:17,234 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:54:17,238 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:54:19,539 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:24,557 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:29,609 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:32,232 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:54:32,234 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:54:35,560 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:40,588 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:45,641 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:47,256 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:54:47,256 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:54:51,554 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:54:56,578 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:01,624 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:02,259 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:55:02,259 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:55:07,621 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:12,661 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:17,257 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:55:17,257 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:55:18,574 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:23,590 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:28,620 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:32,263 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:55:32,263 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:55:34,559 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:39,602 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:44,630 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:47,268 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:55:47,268 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:55:50,597 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:55:55,650 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:00,709 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:02,273 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:56:02,273 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:56:06,516 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:11,556 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:16,608 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:17,289 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:56:17,289 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:56:17,363 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:56:17,363 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:56:17,363 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:56:17,371 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:56:17,371 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:56:17,371 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:56:17,371 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:56:17,371 WARNING HandlerThread:285072 [interfaces.py:finish():207] Failed to finish cpu monitoring: cannot join thread before it is started
+2023-09-07 18:56:17,373 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:56:17,373 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:56:17,373 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:56:17,374 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:56:17,563 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:56:19,805 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:56:19,805 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:56:19,806 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:56:19,806 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:56:19,831 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:56:19,832 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:56:19,832 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:56:19,832 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:56:19,832 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:56:19,832 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:56:19,833 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:56:19,833 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:56:19,833 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:56:19,833 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:56:19,833 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:56:19,833 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:56:19,833 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:56:19,889 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:56:21,855 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:21,915 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:56:24,324 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:56:24,324 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:56:24,324 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:56:24,327 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:56:24,327 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:56:24,327 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:56:24,327 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:56:24,327 WARNING HandlerThread:285072 [interfaces.py:finish():207] Failed to finish cpu monitoring: cannot join thread before it is started
+2023-09-07 18:56:24,327 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:56:24,327 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:56:24,327 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:56:24,327 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:56:25,990 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:56:27,356 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:28,005 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:56:28,005 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:56:28,005 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:56:28,005 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:56:28,033 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:56:28,033 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:56:28,033 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:56:28,033 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:56:28,034 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:56:28,034 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:56:28,034 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:56:28,034 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:56:28,035 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:56:28,035 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:56:28,035 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:56:28,256 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:56:28,257 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:56:30,054 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:56:32,291 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:56:32,291 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:56:32,607 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:35,289 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:56:35,289 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:56:35,289 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:56:35,289 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:56:35,331 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:56:35,331 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:56:35,331 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:56:35,331 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:56:35,331 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:56:35,332 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:56:35,332 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:56:35,332 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:56:35,332 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:56:35,332 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:56:35,332 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:56:38,117 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:56:38,356 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:43,393 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:47,308 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:56:47,308 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:56:48,562 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:51,211 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:56:51,211 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:56:51,211 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:56:51,211 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:56:51,227 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:56:51,227 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:56:51,227 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:56:51,227 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:56:51,227 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:56:51,227 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:56:51,227 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:56:51,227 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:56:51,227 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:56:51,227 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:56:51,227 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:56:51,444 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:56:51,445 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:56:52,234 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:56:53,233 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:56:53,233 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:56:53,233 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:56:53,234 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:56:53,266 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:56:53,267 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:56:53,268 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:56:53,268 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started memory monitoring
+2023-09-07 18:56:53,291 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started network monitoring
+2023-09-07 18:56:53,326 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:56:53,326 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:56:53,326 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:56:53,326 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:56:53,352 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:56:53,352 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:56:53,353 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:56:53,353 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:56:53,531 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:56:53,531 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined memory monitor
+2023-09-07 18:56:53,531 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined network monitor
+2023-09-07 18:56:53,531 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:56:54,294 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:56:54,547 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:56:59,599 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:57:02,301 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:57:02,301 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:57:05,594 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:57:09,565 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:57:09,565 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:57:09,565 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:57:09,565 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:57:09,596 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:57:09,596 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:57:09,597 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:57:09,597 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started memory monitoring
+2023-09-07 18:57:09,616 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started network monitoring
+2023-09-07 18:57:09,715 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:57:09,715 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:57:09,715 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:57:09,715 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:57:09,716 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:57:09,716 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:57:09,745 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:57:09,745 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:57:09,921 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:57:09,921 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined memory monitor
+2023-09-07 18:57:09,921 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined network monitor
+2023-09-07 18:57:09,921 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:57:10,934 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:57:12,467 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:57:15,554 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:57:15,554 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:57:15,554 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:57:15,555 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:57:15,599 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:57:15,599 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:57:15,600 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:57:15,600 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:57:15,600 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:57:15,600 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:57:15,600 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:57:15,600 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:57:15,601 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:57:15,601 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:57:15,601 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:57:15,810 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:57:15,811 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:57:15,956 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:57:15,956 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:57:15,956 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:57:15,956 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:57:15,987 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:57:15,987 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:57:15,987 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:57:15,987 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:57:15,988 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:57:15,988 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:57:15,988 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:57:15,988 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:57:15,988 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:57:15,988 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:57:15,988 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:57:15,989 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:57:15,989 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:57:15,989 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:57:17,315 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:57:17,315 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:57:18,227 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:57:18,227 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:57:18,227 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:57:18,228 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:57:18,266 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:57:18,266 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:57:18,267 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:57:18,267 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:57:18,267 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:57:18,267 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:57:18,267 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:57:18,267 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:57:18,267 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:57:18,267 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:57:18,267 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:57:18,468 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:57:18,468 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:57:18,516 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:57:18,603 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:57:18,604 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:57:18,604 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:57:18,604 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:57:18,637 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:57:18,640 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:57:18,640 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:57:18,640 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:57:18,640 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:57:18,640 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:57:18,640 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:57:18,640 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:57:18,641 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:57:18,641 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:57:18,641 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:57:18,641 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:57:18,641 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:57:20,536 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:57:21,672 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:57:24,384 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:57:24,384 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:57:24,384 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:57:24,386 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:57:24,416 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:57:24,417 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: pause
+2023-09-07 18:57:24,417 INFO    HandlerThread:285072 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-09-07 18:57:24,417 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:57:24,417 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:57:24,417 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:57:24,418 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:57:24,418 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:57:24,418 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:57:24,418 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:57:24,418 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:57:24,418 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:57:24,418 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:57:26,606 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:57:27,442 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:57:32,335 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-07 18:57:32,335 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: stop_status
+2023-09-07 18:57:32,645 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:57:36,347 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: resume
+2023-09-07 18:57:36,348 INFO    HandlerThread:285072 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-09-07 18:57:36,348 INFO    HandlerThread:285072 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 18:57:36,348 INFO    SystemMonitor:285072 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 18:57:36,395 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 18:57:36,396 DEBUG   SenderThread:285072 [sender.py:send():379] send: telemetry
+2023-09-07 18:57:36,396 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 18:57:36,396 DEBUG   SenderThread:285072 [sender.py:send():379] send: exit
+2023-09-07 18:57:36,396 INFO    SenderThread:285072 [sender.py:send_exit():584] handling exit code: 0
+2023-09-07 18:57:36,397 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 18:57:36,397 INFO    SenderThread:285072 [sender.py:send_exit():586] handling runtime: 4
+2023-09-07 18:57:36,397 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started memory monitoring
+2023-09-07 18:57:36,416 INFO    SystemMonitor:285072 [interfaces.py:start():190] Started network monitoring
+2023-09-07 18:57:36,416 INFO    SenderThread:285072 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-07 18:57:36,416 INFO    SenderThread:285072 [sender.py:send_exit():592] send defer
+2023-09-07 18:57:36,416 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:36,416 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-07 18:57:36,417 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:36,417 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-09-07 18:57:36,417 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 1
+2023-09-07 18:57:36,417 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:36,417 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-07 18:57:36,417 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:36,417 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-09-07 18:57:36,417 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 2
+2023-09-07 18:57:36,417 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:36,417 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-07 18:57:36,417 INFO    HandlerThread:285072 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 18:57:36,417 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 18:57:36,418 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 18:57:36,418 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 18:57:36,418 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 18:57:36,418 DEBUG   SystemMonitor:285072 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 18:57:36,630 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 18:57:36,630 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined memory monitor
+2023-09-07 18:57:36,630 INFO    HandlerThread:285072 [interfaces.py:finish():202] Joined network monitor
+2023-09-07 18:57:36,630 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:36,631 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-09-07 18:57:36,631 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 3
+2023-09-07 18:57:36,631 DEBUG   SenderThread:285072 [sender.py:send():379] send: stats
+2023-09-07 18:57:36,631 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:36,631 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-07 18:57:36,631 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:36,631 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-09-07 18:57:36,631 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 4
+2023-09-07 18:57:36,631 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:36,631 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-07 18:57:36,631 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:36,631 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-09-07 18:57:36,631 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 5
+2023-09-07 18:57:36,632 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:36,632 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-07 18:57:36,632 DEBUG   SenderThread:285072 [sender.py:send():379] send: summary
+2023-09-07 18:57:36,632 INFO    SenderThread:285072 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-07 18:57:36,632 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:36,632 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-09-07 18:57:36,632 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 6
+2023-09-07 18:57:36,633 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:36,633 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-07 18:57:36,633 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:36,633 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-09-07 18:57:36,635 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 18:57:36,698 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\wandb-summary.json
+2023-09-07 18:57:37,149 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 7
+2023-09-07 18:57:37,149 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:37,149 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-07 18:57:37,149 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:37,149 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-09-07 18:57:37,374 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-07 18:57:37,707 INFO    Thread-16 :285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\config.yaml
+2023-09-07 18:57:38,011 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 8
+2023-09-07 18:57:38,011 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: poll_exit
+2023-09-07 18:57:38,011 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:38,012 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-07 18:57:38,012 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:38,012 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-09-07 18:57:38,012 INFO    SenderThread:285072 [job_builder.py:build():281] Attempting to build job artifact
+2023-09-07 18:57:38,013 INFO    SenderThread:285072 [job_builder.py:build():297] run is notebook based run
+2023-09-07 18:57:38,013 INFO    SenderThread:285072 [job_builder.py:_get_source_type():411] no source found
+2023-09-07 18:57:38,013 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 9
+2023-09-07 18:57:38,013 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:38,013 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-07 18:57:38,013 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:38,013 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-09-07 18:57:38,013 INFO    SenderThread:285072 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-07 18:57:38,387 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-07 18:57:38,720 INFO    SenderThread:285072 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:57:38,720 INFO    SenderThread:285072 [dir_watcher.py:finish():388] scan: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files
+2023-09-07 18:57:38,720 INFO    SenderThread:285072 [dir_watcher.py:finish():402] scan save: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\conda-environment.yaml conda-environment.yaml
+2023-09-07 18:57:38,721 INFO    SenderThread:285072 [dir_watcher.py:finish():402] scan save: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\config.yaml config.yaml
+2023-09-07 18:57:38,721 INFO    SenderThread:285072 [dir_watcher.py:finish():402] scan save: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log output.log
+2023-09-07 18:57:38,722 INFO    SenderThread:285072 [dir_watcher.py:finish():402] scan save: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\requirements.txt requirements.txt
+2023-09-07 18:57:38,724 INFO    SenderThread:285072 [dir_watcher.py:finish():402] scan save: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\wandb-metadata.json wandb-metadata.json
+2023-09-07 18:57:38,725 INFO    SenderThread:285072 [dir_watcher.py:finish():402] scan save: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\wandb-summary.json wandb-summary.json
+2023-09-07 18:57:38,727 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 10
+2023-09-07 18:57:38,727 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: poll_exit
+2023-09-07 18:57:38,728 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:38,728 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 10
+2023-09-07 18:57:38,730 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:38,730 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-09-07 18:57:38,730 INFO    SenderThread:285072 [file_pusher.py:finish():159] shutting down file pusher
+2023-09-07 18:57:39,354 INFO    wandb-upload_0:285072 [upload_job.py:push():131] Uploaded file c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\config.yaml
+2023-09-07 18:57:39,361 INFO    wandb-upload_1:285072 [upload_job.py:push():131] Uploaded file c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\output.log
+2023-09-07 18:57:39,380 INFO    wandb-upload_2:285072 [upload_job.py:push():131] Uploaded file c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\requirements.txt
+2023-09-07 18:57:39,401 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-07 18:57:39,401 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: poll_exit
+2023-09-07 18:57:39,628 INFO    wandb-upload_3:285072 [upload_job.py:push():131] Uploaded file c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\files\wandb-summary.json
+2023-09-07 18:57:39,836 INFO    Thread-15 :285072 [sender.py:transition_state():612] send defer: 11
+2023-09-07 18:57:39,836 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:39,836 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 11
+2023-09-07 18:57:39,836 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:39,836 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-09-07 18:57:39,837 INFO    SenderThread:285072 [file_pusher.py:join():164] waiting for file pusher
+2023-09-07 18:57:39,837 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 12
+2023-09-07 18:57:39,837 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:39,837 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 12
+2023-09-07 18:57:39,837 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:39,837 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-09-07 18:57:39,837 INFO    SenderThread:285072 [file_stream.py:finish():593] file stream finish called
+2023-09-07 18:57:40,408 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-07 18:57:40,562 INFO    SenderThread:285072 [file_stream.py:finish():597] file stream finish is done
+2023-09-07 18:57:40,562 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 13
+2023-09-07 18:57:40,562 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: poll_exit
+2023-09-07 18:57:40,562 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:40,563 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 13
+2023-09-07 18:57:40,563 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:40,563 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-09-07 18:57:40,563 INFO    SenderThread:285072 [sender.py:transition_state():612] send defer: 14
+2023-09-07 18:57:40,563 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 18:57:40,563 DEBUG   SenderThread:285072 [sender.py:send():379] send: final
+2023-09-07 18:57:40,564 INFO    HandlerThread:285072 [handler.py:handle_request_defer():170] handle defer: 14
+2023-09-07 18:57:40,564 DEBUG   SenderThread:285072 [sender.py:send():379] send: footer
+2023-09-07 18:57:40,564 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: defer
+2023-09-07 18:57:40,564 INFO    SenderThread:285072 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-09-07 18:57:40,564 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-07 18:57:40,565 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: server_info
+2023-09-07 18:57:40,565 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: get_summary
+2023-09-07 18:57:40,565 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: poll_exit
+2023-09-07 18:57:40,565 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: sampled_history
+2023-09-07 18:57:40,565 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: server_info
+2023-09-07 18:57:40,565 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: job_info
+2023-09-07 18:57:40,765 DEBUG   SenderThread:285072 [sender.py:send_request():406] send_request: job_info
+2023-09-07 18:57:40,766 DEBUG   HandlerThread:285072 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-07 18:57:40,766 INFO    HandlerThread:285072 [handler.py:finish():857] shutting down handler
+2023-09-07 18:57:41,570 INFO    WriterThread:285072 [datastore.py:close():294] close: c:\Users\sim\Lab\심영준_포항공대\미세먼지\custom\wandb\run-20230907_185046-nofqtn30\run-nofqtn30.wandb
+2023-09-07 18:57:41,780 INFO    SenderThread:285072 [sender.py:finish():1552] shutting down sender
+2023-09-07 18:57:41,780 INFO    SenderThread:285072 [file_pusher.py:finish():159] shutting down file pusher
+2023-09-07 18:57:41,781 INFO    SenderThread:285072 [file_pusher.py:join():164] waiting for file pusher

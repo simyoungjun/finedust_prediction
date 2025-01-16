@@ -1,0 +1,44 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.8.15",
+    "heartbeatAt": "2023-09-20T08:49:48.833484",
+    "startedAt": "2023-09-20T08:49:47.981326",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\sim\\Lab\\\uc2ec\uc601\uc900_\ud3ec\ud56d\uacf5\ub300\\\ubbf8\uc138\uba3c\uc9c0\\custom\\analysis.py",
+    "codePath": "analysis.py",
+    "host": "DESKTOP-S2I4I68",
+    "username": "sim",
+    "executable": "c:\\Users\\sim\\anaconda3\\envs\\torch_test\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2100.0,
+        "min": 0.0,
+        "max": 2100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 2100.0
+        }
+    ],
+    "disk": {
+        "total": 930.8533592224121,
+        "used": 621.0651245117188
+    },
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 31.743865966796875
+    }
+}
