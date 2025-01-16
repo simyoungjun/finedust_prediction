@@ -9,8 +9,7 @@ This project develops a deep learning-based time-series prediction model for PM1
 - **Source**: Air quality monitoring stations in Seoul.
 - **Timeframe**: 2008–2022.
 - **Features**: 
-  - PM10 and PM2.5 concentrations (\( \mu g/m^3 \)).
-  - Data from Jung-gu and its surrounding 7 districts.
+  - PM10 and PM2.5 concentrations.
 - **Preprocessing**: 
   - Linear interpolation for missing values.
   - Normalization with a custom MinMaxScaler.
@@ -25,21 +24,21 @@ These visualizations highlight the model's performance with metrics such as RMSE
 
 | Scatter Plot and Hexbin Plot (Model Predictions) |
 |--------------------------------------------------|
-| ![Scatter and Hexbin Plots](result_score.png)    |
+| ![Scatter and Hexbin Plots](custom_training/result_fig/graph_pred.png)    |
 
 #### 2. **Time-Series Predictions**
 Comparison of predicted vs. actual PM10 levels across multiple districts.
 
 | Time-Series Predictions |
 |-------------------------|
-| ![Time-Series](result_plot.png) |
+| ![Time-Series](custom_training/result_fig/results.png) |
 
 #### 3. **Spatial Analysis**
 Visualization of PM10 distributions across Seoul’s districts, emphasizing spatial patterns.
 
-| PM10 Spatial Distribution |
+| PM10/2.5 Spatial Distribution |
 |---------------------------|
-| ![Spatial Analysis](data_analysis_0.png) |
+| ![Spatial Analysis](images/data_analysis_0.png) |
 
 ---
 
