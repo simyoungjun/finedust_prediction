@@ -44,9 +44,8 @@ Visualization of PM10 distributions across Seoul’s districts, emphasizing spat
 ---
 
 ### **Research Highlights**
-1. **Data**:
-   - Used PM10 and PM2.5 data from Jung-gu and neighboring districts.
-   - Focused on daily average PM10 predictions for the next day.
+1. **Moving Average Smoothing**:
+   - Applied to reduce noise and stabilize the model, addressing PM10's high volatility.
 
 2. **Deep Learning Approach**:
    - A hybrid CNN-LSTM model was utilized to capture both spatial and temporal features.
