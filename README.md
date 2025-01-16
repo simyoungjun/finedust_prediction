@@ -20,14 +20,15 @@ This project develops a deep learning-based time-series prediction model for PM1
 ### **Key Results**
 
 #### 1. **Scatter and Hexbin Plots**
-These visualizations highlight the model's performance with metrics such as RMSE, MAE, and correlation values.
+Comparison of predicted vs. measured PM10 levels of Jung-gu.
+
 
 | Scatter Plot and Hexbin Plot (Model Predictions) |
 |--------------------------------------------------|
 | ![Scatter and Hexbin Plots](custom_training/result_fig/graph_pred.png)    |
 
 #### 2. **Time-Series Predictions**
-Comparison of predicted vs. actual PM10 levels across multiple districts.
+These visualizations highlight the model's performance with metrics such as RMSE, MAE, and correlation values.
 
 | Time-Series Predictions |
 |-------------------------|
